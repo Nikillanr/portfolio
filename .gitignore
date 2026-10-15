@@ -1,0 +1,9 @@
+node_modules/
+.sites/
+*.zip
+*.log
+.preview-browser/
+.qa/
+*.tar.gz
+.openai/
+Nikillan_2026_resume.pdf

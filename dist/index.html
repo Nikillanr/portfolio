@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141615">
+  <meta name="description" content="Nikillan Rajesh — robotics, perception, and AI systems. Columbia University. Selected projects, research, and engineering.">
+  <title>Nikillan Rajesh — Robotics & AI</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/research.svg" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="content.js" defer></script>
+  <script src="scene.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-entry="landing">
+  <a class="skip-link" href="#enter-work">Skip to portfolio entrance</a>
+  <div class="loader" id="loader" aria-hidden="true"><span id="load-number">0%</span></div>
+  <main id="main">
+    <section class="landing" id="landing" aria-labelledby="landing-name">
+      <div class="landing-top"><span>Portfolio / 2026</span><span>New York, NY</span></div>
+      <div class="landing-decoration" aria-hidden="true"><svg class="landing-art" viewBox="0 0 600 600" fill="none"><circle cx="300" cy="300" r="220"/><ellipse cx="300" cy="300" rx="110" ry="220" transform="rotate(35 300 300)"/><ellipse cx="300" cy="300" rx="110" ry="220" transform="rotate(-35 300 300)"/><path d="M40 300h520M300 40v520"/><circle class="orbit-point" cx="482" cy="177" r="5"/></svg></div>
+      <div class="landing-center"><div class="landing-identity"><h1 id="landing-name">Nikillan<br><span>Rajesh.</span></h1></div><div class="landing-summary"><button class="enter-work" id="enter-work" disabled>Explore my work <span aria-hidden="true">↗</span></button></div></div>
+      <div class="landing-bottom"><a class="profile-email" href="mailto:nr3139@columbia.edu">nr3139@columbia.edu</a><span>Ideas, experiments & things I build.</span></div>
+    </section>
+    <section class="gallery" id="gallery" data-view="overview" aria-label="Selected projects" inert>
+      <div class="scene" aria-hidden="true">
+        <img id="hero-image" src="assets/research.svg" alt="">
+        <img id="incoming-image" src="assets/healthcare.svg" alt="">
+        <canvas id="scene-canvas"></canvas>
+        <div class="scene-shade"></div>
+      </div>
+      <header class="header"><nav aria-label="Main navigation"><a class="nav-link active" href="#work" id="work-open" aria-current="page">Work</a><a class="nav-link" href="#about" id="about-open">About</a></nav></header>
+      <div class="overview" id="overview"><div class="rail-window" id="project-rail" role="group" aria-label="Project gallery. Swipe or scroll to browse."></div><span class="rail-cross" aria-hidden="true"></span></div>
+      <button class="project-open" id="project-open" aria-label="Open Eli Lilly research project"><span class="title-mask"><h1 id="project-title">Eli Lilly · Research Intelligence</h1></span></button>
+      <p class="sr-only" id="project-announcement" aria-live="polite" aria-atomic="true">Project 1 of 7: Eli Lilly · Research Intelligence</p>
+      <button class="scroll-arrow previous" id="previous" aria-label="Previous project — scroll up" title="Scroll up"><svg viewBox="0 0 24 32" fill="none" aria-hidden="true"><path d="M12 28V4M4 12l8-8 8 8"/></svg></button>
+      <button class="scroll-arrow next" id="next" aria-label="Next project — scroll down" title="Scroll down"><svg viewBox="0 0 24 32" fill="none" aria-hidden="true"><path d="M12 4v24M4 20l8 8 8-8"/></svg></button>
+      <div class="pager" aria-label="Project position"><span class="pager-window"><span id="page-numbers"></span></span><span class="pager-dash">—</span><span id="project-total">7</span></div>
+      <div class="thumbnail-rail" id="thumbnails" role="group" aria-label="Choose a project"></div>
+      <button class="mode-toggle" id="mode-toggle" aria-label="Switch to fullscreen view" aria-pressed="false">Fullscreen <span aria-hidden="true">↗</span></button>
+      <a class="image-note gallery-email profile-email" href="mailto:nr3139@columbia.edu">nr3139@columbia.edu</a>
+    </section>
+  </main>
+  <dialog class="about-page" id="info-panel" aria-labelledby="about-title">
+    <nav class="dialog-nav" aria-label="About navigation"><button id="close-info">Work</button><span aria-current="page">About</span></nav>
+    <div class="about-content" id="panel-content"></div>
+  </dialog>
+  <dialog class="project-page" id="project-dialog" aria-labelledby="detail-title"><button class="back-button" id="close-project">← Back to work</button><div id="project-content"></div></dialog>
+  <noscript><div class="noscript">Nikillan Rajesh — software for robotics and AI at Columbia University.<br>Enable JavaScript to explore the projects, or <a href="mailto:nr3139@columbia.edu">get in touch</a>.</div></noscript>
+</body>
+</html>

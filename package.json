@@ -1,0 +1,10 @@
+{
+  "name": "selected-works-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An immersive, responsive creative portfolio. No build step or dependencies.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "check": "node --check dist/app.js && node --check dist/content.js && node --check dist/scene.js"
+  }
+}
